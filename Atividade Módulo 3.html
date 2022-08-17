@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Link e Formulário</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css"/>
+</head>
+<hr/>
+ <h2 class="centro">UNOESTE</h2>
+<hr/>
+<body>
+<a name="topo"></a>
+<form name="FCadInf" action="pagina.jsp" method="post">
+    <label for="tnome">Nome:</label>
+    <input type="text" id="tnome" size="40"maxlength="30" placeholder="Digite aqui..." required="required" autofocus="true"/>
+    <br/><br/>
+    
+    <label for="tsenha">Senha:</label>
+    <input type="password" size="10" maxlength="8"/>
+    <br/><br/>
+    
+    <label for="tlazer">Lazer:</label><br/>
+    <input type="checkbox" id="tlazer" value="1"/>Assistir filme<br/>
+    <input type="checkbox" id="tlazer1" value="2"/>Assistir série <br/>
+    
+    <br/><br/>
+    <label for="tcivil">Estado Civil:</label><br/>
+    <input type="radio" name="civil" value="1" checked="checked"/>Solteiro<br/>
+    <input type="radio" name="civil" value="2"/>Casado<br/>
+    
+    <br/>
+    <label for="scid">Cidade:</label><br/>
+    <select id="scid">
+        <option value-="1">Prudente</option>
+        <option value="2">Taciba</option>
+    </select>
+    <br/><br/>
+    <label for="tobs">Observação:</label><br/>
+    <textarea rows="5" cols="20"></textarea>
+    <br/><br/>
+    <label for="tfone">Telefone:</label><br/>
+    <input type="tel" id="tfone" size="30" pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(99) 99999-9999"/>
+    <br/><br/>
+    <label for="tescolha">Escolha:</label><br/>
+    <input type="text" id="tescolha" list="lista">
+    <datalist id="lista">
+        <option value="HTML"></option>
+        <option value="HTML4"></option>
+        <option value="HTML5"></option>
+        <option value="W3C"></option>
+    </datalist>
+    <br/><br/>
+    <input type="button" id="bmensagem" value="ok" onclick="alert('Sucesso!')"/>
+    <input type="reset" id="blimpar" value="limpar"/>
+    <input type="submit" id="bgravar" value="gravar"/>
+</form>
+</body>
+</html>

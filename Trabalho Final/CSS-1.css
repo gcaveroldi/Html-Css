@@ -1,0 +1,22 @@
+body {
+    font-family: verdana; background: gray; background-image:url(Fundo.jpg);
+}
+h1 {
+    color: orange; border-style: solid; text-align: center; display: flex;
+    justify-content: center; background-color: green}
+h3 {
+    color: orange
+}
+li {
+    color: orange }
+a {
+    color: orange }
+h4 {
+    color: orange; 
+}
+form {
+    color: orange
+}
+p {
+    color: orange
+}
